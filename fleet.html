@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fleet.css">
+    <title>Our Fleet</title>
+</head>
+<body>
+        <!-- Top Notification Bar -->
+        <div class="top-bar">
+            <p>📞 Call us today to confirm your rental! <span>443-273-4839</span> </p>
+            <p>admin@contactgt360luxury.llc</p>
+        </div>
+        <div class="down-bar">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/gt360rental?igsh=YzljYTK1ODg3Zg=="><img src="ig.png" alt="IG link"></a>
+            </div>
+            <button class="quote1-btn1">GET A FREE QUOTE</button>
+            <button class="quote1-btn1">📞 443-273-4839</button>
+        </div>
+    
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">GT360 Luxury</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cars</a></li>
+            <button class="call-btn">RESERVE NOW</button>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+
+        <section class="car-fleet">
+            <h2>Our Fleet</h2>
+
+
+
+            <div class="car-grid">
+
+                <div class="car-card">
+                    <img src="1.jpg" alt="Luxury Car 1">
+                    <h3>Lamborghini Technica</h3>
+                    <p>$800 / day</p>
+                    <button onclick="redirectToForm('Lamborghini Technica', '$800/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="2.jpg" alt="Luxury Car 2">
+                    <h3>Lamborghini Urus</h3>
+                    <p>$1200 / day</p>
+                    <button onclick="redirectToForm('Lamborghini Urus', '$1200/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="3.jpg" alt="Luxury Car 3">
+                    <h3>Mercedes Benz S580</h3>
+                    <p>$600 / day</p>
+                    <button onclick="redirectToForm('Mercedes Benz S580', '$600/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="6.jpg" alt="Luxury Car 4">
+                    <h3>Rolls Royce cullinan</h3>
+                    <p>$1700 / day</p>
+                    <button onclick="redirectToForm('Rolls Royce cullinan', '$1700/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="7.jpg" alt="Luxury Car 5">
+                    <h3>Mercedes Benz GLE 53</h3>
+                    <p>$550 / day</p>
+                    <button onclick="redirectToForm('Mercedes Benz GLE 53', '$550/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="9.jpg" alt="Luxury Car 6">
+                    <h3>Lamborghini Urus</h3>
+                    <p>$1200 / day</p>
+                    <button onclick="redirectToForm('Lamborghini Urus', '$1200/day')">Book Now</button>
+                </div>
+                <div class="car-card">
+                    <img src="8.jpg" alt="Luxury Car 7">
+                    <h3>Lamborghini Huracan evo</h3>
+                    <p>$1559 / day</p>
+                    <button onclick="redirectToForm('Lamborghini Huracan evo', '$1559/day')">Book Now</button>
+                </div>
+
+            </div>
+            <button onclick="location.href='index.html'" id="loadMoreBtn">Back</button>
+        </section>
+
+
+        <script>
+            function redirectToForm(carName, carPrice) {
+                window.location.href = `form.html?car=${encodeURIComponent(carName)}&price=${encodeURIComponent(carPrice)}`;
+            }
+        </script>
+    
+</body>
+</html>
